@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: blue;
+  background-color: bisque;
+  border: solid 2px #40e0d0;
+}
+
+h1 {
+  color: black;
+}
+
+img {
+  padding-left: 500px;
+}
+
+header p {
+  color: blueviolet;
+  text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  text-align: center;
+  color: rgb(87, 84, 84);
+}
+
+ol li:nth-child(odd) {
+  color: red;
+}
+
+ul li:nth-child(even) {
+  color: green;
+}
+
+#kuca {
+  font-weight: bold;
+  color: orangered;
+}

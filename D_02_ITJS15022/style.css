@@ -1,0 +1,37 @@
+body {
+  background-color: burlywood;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: violet;
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  margin-left: 360px;
+  border: double purple;
+}
+
+.identicni {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: rgb(89, 7, 89);
+}
+
+#special {
+  color: black;
+  font-size: 24px;
+}
+
+#special a {
+  color: red;
+  text-decoration: none;
+}
+
+#special a:hover {
+  color: green;
+  text-decoration: none;
+}
