@@ -1,0 +1,22 @@
+div {
+  padding: 10px 50px;
+  margin-right: 100px;
+}
+form {
+  display: table;
+}
+
+.right {
+  margin-left: 30px;
+}
+.left {
+  margin-left: 47px;
+}
+
+div input {
+  margin-left: 25px;
+}
+div label {
+  font-weight: 600;
+  color: rgb(34, 37, 41);
+}

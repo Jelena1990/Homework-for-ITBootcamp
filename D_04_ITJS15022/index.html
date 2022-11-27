@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>DOMACI_04</title>
+  </head>
+  <body>
+    <form action="test.php" method="post">
+
+      <fieldset>
+        <legend>Login details</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="ime"
+            class="left"
+          />
+        </div>
+        <div>
+ <label for="email">Email:</label>
+          <input type="email" name="email" id="email" class="left" />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="text" name="password" id="password" />
+ </div>
+      </fieldset>
+ <fieldset>
+  <legend>Your feedback</legend>
+  <section>
+    <div>
+    <label for="em">Please check all the emotions that apply to you:</label></div>
+    <div class="right">Angry<input type="checkbox" name="em" id="em" value="angry"  /></div>
+    <div class="right">Sad<input type="checkbox" name="em" id="em" value="sad"  /></div>
+    <div class="right">Happy<input type="checkbox" name="em" id="em" value="happy" checked /></div> 
+    <div class="right">Ambivalent<input type="checkbox" name="em" id="em" value="ambivalent" /></div>
+  </section>
+
+<section>
+  <div>
+  <label for="sf">How satisfied were you with our service?</label></div>
+ <div class="right"> Very satisfied<input type="radio" name="sf" id="sf" value="very satisfied"  />  </div>
+ <div class="right"> Satisfied<input type="radio" name="sf" id="sf" value=" satisfied"  />  </div>
+ <div class="right">Didn't care <input type="radio" name="sf" id="sf" value="didn't care"  />  </div>
+ <div class="right"> Dissatisfied<input type="radio" name="sf" id="sf" value="dissatisfied"  />  </div>
+ <div class="right"> Very dissatisfied<input type="radio" name="sf" id="sf" value="very dissatisfied"  />  </div>
+</section>
+<div>
+  <label for="comments">Further comments:</label>
+  <textarea name="comments" id="comments" cols="25" rows="3">
+</textarea >
+</div>
+ </fieldset>
+
+ <div>
+  <label>Bio photo:</label>
+  <input type="file" size="50"/>
+ </div>
+
+ <div>
+  <label for="location">Location visited:</label>
+  <select name="location" id="location">
+      <option value="">Select location:</option>
+      <option value="kg">New York</option>
+      <option value="bg">Chickago</option>
+      <option value="nis">Miami</option>
+  </select>
+ </div>
+
+ <div>   <input type="submit" value="Submit" /></div>
+ <div>   <input type="reset" value="reset" /></div>
+
+  </body>
+</html>
