@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet"/>
+  <title>Domaci 06</title>
+</head>
+<body>
+  <form>
+    <!-- 1.red-->
+    <div class="row">
+      <div class="col-2">
+        <label class="levo" for="name">Ime i prezime</label>
+      </div>
+
+      <div class="col-10">
+        <input type="text" id="name" name="name" placeholder="Unesite svoje ime i prezime...">
+      </div>
+    </div>
+    <!-- 2.red-->
+    <div class="row">
+      <div class="col-2">
+        <label for="search">Pretrazite</label>
+      </div>
+
+      <div class="col-10">
+        <input type="search" id="search" name="search" placeholder="&#128269  Pretrazite">
+      </div>
+    </div>
+    <!-- 3.red-->
+    <div class="row">
+      <div class="col-2">
+        <label for="zemlja">Zemlja</label>
+      </div>
+
+      <div class="col-10">
+       <select name="zemlja" id="zemlja">
+        <option value="Italija">Italija</option>
+        <option value="Italija">Spanija</option>
+        <option value="Italija">Madjarska</option>
+        </select>
+       </div>
+    </div>
+    <!-- 4.red-->
+    <div class="row">
+      <div class="col-2">
+        <label for="opis">Opis</label>
+      </div>
+
+      <div class="col-10">
+      <textarea name="opis" id="opis" cols="100" rows="6" placeholder="Napisite neki opis..."> </textarea>
+      </div>
+    </div>
+    <!-- 5.red-->
+    <div class="row">
+      <div class="col-12">
+       <input type="submit"  id="submit" value="Potvrdite" />
+      </div>
+    </div>
+  </form>
+  
+</body>
+</html>
