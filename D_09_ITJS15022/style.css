@@ -1,0 +1,9 @@
+*{box-sizing:border-box;}
+.parni_broj{
+  border:1px solid red;
+  margin-right:2px;
+}
+.neparni_broj{
+  border:1px solid blue;
+  margin-right:2px;
+}
