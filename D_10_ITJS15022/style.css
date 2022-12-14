@@ -1,0 +1,31 @@
+*{box-sizing:border-box;}
+
+
+body{width:420px;}
+
+
+.black{
+  width:50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display:inline-block;
+  text-align:center;
+  background-color:black;
+  color:white;
+  border:1px solid black; 
+  margin-bottom:5px;
+}
+
+
+
+.white{
+  width:50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display:inline-block;
+  text-align:center;
+  background-color:white;
+  color:black;
+  border:1px solid black; 
+  margin-bottom:5px;
+}
