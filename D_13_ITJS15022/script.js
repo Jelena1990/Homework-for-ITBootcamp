@@ -27,7 +27,7 @@ Metod vraća true ukoliko je dan bio nepovoljan, u suprotnom vraća false.*/
 
 nepovoljandan: function () {
   let rezultat= false; 
-  for(i=0; i<this.vrednost_temperature.length; i=i+1){
+  for(i=0; i<this.vrednost_temperature.length-1; i=i+1){
       if(this.vrednost_temperature[i] - this.vrednost_temperature[i+1] > 8 || this.vrednost_temperature[i] - this.vrednost_temperature[i+1] < -8 ){
          rezultat= true;
       }
@@ -42,7 +42,7 @@ Metod vraća true ukoliko je dan bio neuobičajen, u suprotnom vraća false.*/
 
 neuobicajandan: function (){
   let temperatura;
-  let rezultat= false;;
+  let rezultat= false;
   for(i=0; i<this.vrednost_temperature.length; i=i+1){
       if (this.vrednost_temperature[i] < -5 && this.kisa== true  ){
           rezultat=true;
