@@ -1,0 +1,61 @@
+body{
+  background-color: #406809;
+  background-image: url(q.png);
+  background-repeat: no-repeat;
+  background-position: right 35% bottom 45%;
+  color:#651515;
+  font-size: 20px;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #406809; 
+  color:beige;
+}
+form{
+ 
+  width:100%;
+  padding:20px 0 0 50px;
+  cursor: pointer;
+}
+.slika{
+  width:100px;
+  margin:30px 0 30px 0;
+}
+
+.container{
+  width:500px;
+  margin-left: 50px;
+  margin-top:100px;
+}
+
+.resenja{
+  background-color: bisque;
+  width:500px;
+  width:280px;
+  margin-left: 50px;
+}
+
+.cards{
+  border:1px solid red;
+  padding:20px;
+  background-color:bisque;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
+#posalji,
+#new{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: bisque;
+  color:#651515;
+}
+
+#posalji:hover,
+#new:hover{
+  cursor: pointer;
+}

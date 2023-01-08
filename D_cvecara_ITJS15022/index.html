@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="slike/flower.png">
+</head>
+<body>
+
+<header>
+  <img src="slike/logo.png" alt="logo"/>
+ <div>
+  <img src="slike/email.png" width="45px" id="img"/>
+  <span id="email">www.flower.com </span>
+ </div>
+  <div>
+    <img src="slike/account.png" width="35px"/>
+    <img src="slike/check.png" width="35px"/>
+  </div>
+</header>
+<div class="dimenzije">
+  <div class="proziran">
+    <h2>Uvek tu za Vas! </h2>
+    <h2>24h otvoreno, besplatna isporuka!  </h2>
+  </div>
+</div>
+
+
+<div class="container">
+  <form>
+<form action="google.com" id="forma" method="post">
+  <h3>Odaberite cveće:</h3>
+  <input type="number" id="ruze" name="ruze" class="inputfield" placeholder="Cena po cvetu je 150 din."/>
+  <label for="ruze" class="labeltext">Ruže</label><br>
+  <input type="number" id="ljiljani" class="inputfield"name="ljiljani"  placeholder="Cena po cvetu je 120 din."/>
+  <label for="ljiljani" class="labeltext">Ljiljani</label><br>
+  <input type="number" id="gerberi" name="gerber" class="inputfield" placeholder="Cena po cvetu je 70 din."/>
+  <label for="gerberi" class="labeltext">Gerberi</label><br>
+
+  <h3>Dodatni pokloni:</h3>
+  <input type="checkbox"  id="bombonjera" name="bombonjera" value="b" /><span class="tekst">Bombonjera</span><br>
+  <input type="checkbox" id="cokolada"name="cokolada" value="c"/><span class="tekst">Čokolada</span><br>
+  <input type="checkbox"  id="sampanjac"name="sampanjac" value="s"/><span class="tekst">Šampanjac</span><br>
+
+  <h3>Plaćanje:</h3>
+
+  <input type="radio" id="placanje" class="inputfield"  name="placanje" value="kes"checked/><span class="tekst">Keš</span><br>
+  <input type="radio" id="placanje" class="inputfield" name="placanje" value="kartica"/><span class="tekst">Kartica</span><br>
+
+  <input type="button" id="izracunaj" value="Izračunaj" />
+  <button id="resetuj">Resetuj</button><br>
+
+  <h3>Vaša porudžbina:</h3>
+  <div id="ruzeCvetovi"></div>
+  <div id="ljiljaniCvetovi"></div>
+  <div id="gerberiCvetovi"></div>
+  <div id="bombonjerapoklon"></div><br>
+  <div id="cokoladapoklon"></div><br>
+  <div id="sampanjacpoklon"></div><br>
+  <div id="cenabezp"></div>
+  <div id="cenasap"></div>
+
+  </form>
+  </div>
+  <div class="dimenzije2">
+    <div class="proziran2">
+      <h2 class="p2">Usrećite voljenu osobu! </h2>
+      <h2 class="p2">Poklonite joj buket po Vašoj meri! </h2>
+    </div>
+</div>
+<section>
+
+<div class="cards">
+  <img src="slike/Group 3.png " width="80px"/>
+  <span class="text text1">dugogodišnje iskustvo</span>
+  </div>
+  <div class="cards">
+    <img src="slike/Group 4.png " width="80px"/>
+    <span class="text">100% sigurno </span>
+    </div>
+    <div class="cards">
+      <img src="slike/Group 2.png " width="80px"/>
+      <span class="text">brza isporuka</span>
+      </div>
+      <div class="cards">
+        <img src="slike/Group 1.png"  width="80px"/>
+        <span class="text">povoljna cena</span>
+        </div>
+     
+       
+</section>
+<footer>
+  <p class="footerp"> All rights reserved &copy;</p>
+  <div class="footerdiv">
+    <img src="slike/instagram.png" class="img" />
+    <img src="slike/pinterest.png" class="img" />
+    <img src="slike/facebook.png" class="img"/>
+  </div>
+  <p class="footerp"> designed by Jelena Vasilesku</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
