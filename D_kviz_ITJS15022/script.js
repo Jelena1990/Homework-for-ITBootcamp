@@ -52,18 +52,17 @@ let pitanje9 = {
 
 let niz= [pitanje,pitanje1,pitanje2,pitanje3,pitanje4,pitanje5,pitanje6,pitanje7,pitanje8,pitanje9];
 
-let randomNiz = niz.sort((a,b) => 0.5 - Math.random());
-randomNiz = randomNiz.slice(0, 6);
-
-
+ let randomNiz = niz.sort((a,b) => 0.5 - Math.random());
+ randomNiz = randomNiz.slice(0, 6);
 
 for(let i=1; i< randomNiz.length; i=i+1){
-  document.getElementById(i).innerHTML='  <p> '+ i + "."+' ' +  randomNiz[i].tekst + '</p>'+
-  '<input type="radio"  name="pit'+ i +'" value="0" checked>' + randomNiz[i].odgovori[0] + ' <br>'+
-  '<input type="radio"  name="pit'+ i +'" value="1">' + randomNiz[i].odgovori[1] + ' <br> '+
-  '<input type="radio" name="pit'+ i +'" value="2">' + randomNiz[i].odgovori[2] + '<br>'+
-  '<input type="hidden" name="indextacanodgovor'+ i +'" value ="'+ randomNiz[i].indexKorektnogOdgovora +'">';
+  document.getElementById(i).innerHTML=   '<p>' + i + "." + ' ' +  randomNiz[i].tekst   +   '</p>'  +
+  '<input type="radio"  id="myRadio'+i+'"    name="pit'+ i +'"    value="0" checked>'  + randomNiz[i].odgovori[0] + ' <br>'  +
+  '<input type="radio"  id="myRadio1'+i+'"   name="pit'+ i +'"    value="1">'          + randomNiz[i].odgovori[1] + ' <br>'  +
+  '<input type="radio"  id="myRadio2'+i+'"   name="pit'+ i +'"    value="2">'          + randomNiz[i].odgovori[2] + '<br>'   +
+  '<input type="hidden"    name="indextacanodgovor'+ i +'" value ="' + randomNiz[i].indexKorektnogOdgovora +'">';
 }
+
     
 let btnPosalji= document.querySelector('#posalji');
 let brojacTacno = 0;
@@ -123,5 +122,10 @@ btnPosalji.addEventListener("click", () =>{
   }
   document.getElementById("tacnih").innerHTML= '<p style="color:blue"> Tacno ste odgovorili na: '+ brojacTacno +' pitanja.</p>';
   document.getElementById("netacnih").innerHTML= '<p style="color:purple">Niste tacno odgovorili na:  '+  brojacNetacno +' pitanja.</p>';
-
+ 
+  for(let i=1; i< randomNiz.length; i=i+1){
+    document.getElementById('myRadio' + i + '').disabled = true;
+    document.getElementById('myRadio1' + i + '').disabled = true;
+    document.getElementById('myRadio2' + i + '').disabled = true;
+  }
 });

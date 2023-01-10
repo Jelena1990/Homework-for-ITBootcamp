@@ -33,11 +33,11 @@
   <form>
 <form action="google.com" id="forma" method="post">
   <h3>Odaberite cveće:</h3>
-  <input type="number" id="ruze" name="ruze" class="inputfield" placeholder="Cena po cvetu je 150 din."/>
+  <input    type="number" min="1" step="1" id="ruze" name="ruze"  class="inputfield" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');"placeholder="Cena po cvetu je 150 din."/>
   <label for="ruze" class="labeltext">Ruže</label><br>
-  <input type="number" id="ljiljani" class="inputfield"name="ljiljani"  placeholder="Cena po cvetu je 120 din."/>
+  <input    type="number" min="1" step="1" id="ljiljani" class="inputfield"name="ljiljani" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');" placeholder="Cena po cvetu je 120 din."/>
   <label for="ljiljani" class="labeltext">Ljiljani</label><br>
-  <input type="number" id="gerberi" name="gerber" class="inputfield" placeholder="Cena po cvetu je 70 din."/>
+  <input type="number" min="1" step="1"id="gerberi" name="gerber" class="inputfield" onkeydown="if(event.key==='.'){event.preventDefault();}"  oninput="event.target.value = event.target.value.replace(/[^0-9]*/g,'');"placeholder="Cena po cvetu je 70 din."/>
   <label for="gerberi" class="labeltext">Gerberi</label><br>
 
   <h3>Dodatni pokloni:</h3>
