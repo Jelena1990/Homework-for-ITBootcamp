@@ -1,0 +1,30 @@
+[
+
+    {
+      "imePrezime": "Thomas Bryant",
+      "visina": 2.08,
+      "timovi":["Washington Wizards", "Los Angeles Lakers"]
+    },
+    {
+      "imePrezime": "Vlade Divac",
+      "visina": 2.16,
+      "timovi":["Sacramento Kings", "Los Angeles Lakers", "Crvena zvezda", "Partizan" ]
+    },
+    {
+      "imePrezime": "Jovan Koprivica",
+      "visina": 1.99,
+      "timovi":["Partizan", "Beopetrol", "OKK Beograd"]
+    },
+    {
+      "imePrezime": "Lonzo Ball",
+      "visina": 1.98,
+      "timovi":["Los Angeles Lakers", "New Orleans Pelicans", "Chicago Bulls"]
+    },
+
+    {
+      "imePrezime": "Marko Jaric",
+      "visina": 2.01,
+      "timovi":["Partizan", "Real Madrid", "Peristeri"]
+    }
+
+]
