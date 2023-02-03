@@ -31,11 +31,11 @@ class Chat {
         }
     }
     
-    async addChat(poruka){
+    async addChat(poruka2){
       let date = new Date();
       date = firebase.firestore.Timestamp.fromDate(date)
       let someChat = {
-          message: poruka,
+          message: poruka2,
           room: this.room, 
           username: this.username,  
           created_at: date
@@ -56,6 +56,18 @@ class Chat {
                }
            })
         })
+    }
+
+    delete(id){
+      this.chats
+      .doc(id)
+      .delete()
+      .then((data) =>{
+        console.log("deleted");
+      })
+      .catch(err => {
+        console.log(err);
+      })
     }
 }
 

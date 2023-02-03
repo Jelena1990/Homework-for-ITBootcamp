@@ -6,6 +6,10 @@ let formaMsg = document.getElementById("formaMsg");
 let formaUpdate=document.getElementById('formaUpdate');
 let div=document.getElementById('obavestenje');
 let nav=document.getElementById('nav');
+let btnColor= document.getElementById('btnColor');
+let color=document.getElementById('changeColor');
+let body = document.getElementsByTagName('body')[0];
+let noviNacin = document.getElementById('noviNacin');
 
 let username;
  if(localStorage.username){
@@ -21,8 +25,10 @@ let chatUI = new ChatUI(ul);
  formaMsg.addEventListener("submit", function(e) {
       e.preventDefault();
       document.getElementById('audio').play();
-       let poruka= document.getElementById('inputM').value;
-        chat.addChat(poruka)
+      //  let poruka= document.getElementById('inputM').value;
+       let poruka2= noviNacin.value;
+        // chat.addChat(poruka)
+        chat.addChat(poruka2)
        .then( ()  =>{
         formaMsg.reset();  
         console.log("Poruka uspesno dodata");
@@ -30,6 +36,25 @@ let chatUI = new ChatUI(ul);
       .catch(e=> {
         console.log(e);
       })
+})
+
+//for Enter
+formaMsg.addEventListener("keyup", function(e) {
+  e.preventDefault();
+  if(e.key =="Enter"){
+  document.getElementById('audio').play();
+  //  let poruka= document.getElementById('inputM').value;
+   let poruka2= noviNacin.value;
+    // chat.addChat(poruka)
+    chat.addChat(poruka2)
+   .then( ()  =>{
+    formaMsg.reset();  
+    console.log("Poruka uspesno dodata");
+  })
+  .catch(e=> {
+    console.log(e);
+  })
+}
 })
 
  
@@ -73,4 +98,26 @@ let chatUI = new ChatUI(ul);
 
     
  
- 
+  btnColor.addEventListener("click", e => {
+    e.preventDefault();
+    let newColor=color.value;
+    console.log(color);
+    setTimeout( () =>{
+      body.style.backgroundColor = newColor}, 500)
+      localStorage.setItem('color', newColor )
+    })
+    body.style.backgroundColor = localStorage.color;
+
+
+    //radi samo na enter, nece
+    ul.addEventListener("click", e => {
+      e.preventDefault();
+      if(e.target.tagName === "BUTTON"){
+        let li=e.target.parentElement;
+        let id = li.id;
+        confirm("Are you sure you wanna delete it?")
+        e.target.parentElement.remove();
+        chat.delete(e.target.parentElement.id);
+        console.log("poruka obrisana");
+      }
+    });

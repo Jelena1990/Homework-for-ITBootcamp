@@ -44,6 +44,7 @@ class ChatUI {
                   <div class="username"> ${data.username}: </div>
                   <div class="message"> ${data.message}</div>
                   <div class="date"> ${this.time(data)}</div>  
+                  <button class="btn-img"><img  calss="bin" src= bin.png></button>
                 </li>`
               this.list.innerHTML += li;
             }
@@ -53,6 +54,7 @@ class ChatUI {
                 <div class="username"> ${data.username}: </div>
                 <div class="message"> ${data.message}</div>
                 <div class="date"> ${this.time(data)}</div>  
+                <button class="btn-img"><img  calss="bin" src= bin.png></button>
               </li>`
             this.list.innerHTML += li;//ceo el sa stranice tj ul iz htmla
           }

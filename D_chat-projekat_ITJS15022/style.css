@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url(bricks.jpg);
+    /* background: url(bricks.jpg); */
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -100,6 +100,17 @@ ul li{
     margin-bottom:20px;
     font-size:16px;
     letter-spacing: 0.1;
+    position:relative;
+}
+
+.bin{
+    display:inline-block;
+    margin-right:-20px;
+    
+}
+
+.btn-img{
+    border-style:none;
 }
 
 .left{
@@ -130,13 +141,15 @@ ul li{
 
 .date{
     font-weight: 100;
+    margin-bottom: 10px;
 }
 
 .message{
     font-weight: 300;
 }
 
-input{
+input,
+#noviNacin{
     width:30%;
     background-color: #fff3f3;
     border-radius:5px;
@@ -169,6 +182,15 @@ input{
      font-weight:600;
 }
 
+#btnColor{
+    width:7%;
+     background-color:#ffb88c;
+     color:white;
+     border-radius:5px;
+     font-weight:600;
+     margin-bottom:-60px;
+}
+
 #btnUpadteU{
   background:linear-gradient(90deg,#ba5370, #f4e2d8);
 }
@@ -188,7 +210,11 @@ input{
     bottom:1%;
 }
 
-
+#formaMsg{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
 
 
 /* MEDIA QUERY ZA MOBILNI */
@@ -201,7 +227,7 @@ input{
       margin: 50px 10px;
       z-index: 99;
       }
-  input {
+  input,#noviNacin {
       height: 25px;
   }
   .row{
@@ -270,7 +296,8 @@ input{
   #left{
         display: none;
   }
-  #btnSendM,#btnUpadteU{
+  #btnSendM,#btnUpadteU, #btnColor
+  {
     width: 100%;
   }
   #h2{
@@ -392,11 +419,14 @@ input{
     margin-left: 41%;
   }
   #btnSendM,
-  #btnUpadteU{
+  #btnUpadteU,
+  #btnColor{
     width: 20%;
   }
   #inputM,
-  #inputU{
+  #inputU,
+  #changeColor,
+  #noviNacin{
     width: 40%;
   }
 }
